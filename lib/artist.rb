@@ -35,6 +35,7 @@ class Artist
         artiste.name
       else
         new_artiste = Artist.new(musician)
+        @@all << new_artiste
         new_artiste
       end
     end
