@@ -7,7 +7,7 @@ class MP3Importer
   def files
     files = []
     Dir.glob(self.path).each do |file|
-      files << file 
+      files << file
     end
     files
   end
