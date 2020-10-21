@@ -35,6 +35,7 @@ class Artist
         artiste
       else
         new_artiste = Artist.new(musician)
+        new_artiste
       end
     end
   end
