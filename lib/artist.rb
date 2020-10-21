@@ -29,4 +29,14 @@ class Artist
     end
   end
 
+  def self.find_or_create_by_name(musician)
+    Artist.list.find do |artiste|
+      if artiste.name == musician
+        artiste.name
+      else
+        new_artiste = Artist.new(dude)
+      end
+    end
+  end
+
 end
