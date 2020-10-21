@@ -30,7 +30,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(musician)
-    Artist.all.each do |artiste|
+    Artist.all.find do |artiste|
       if artiste.name == musician
         artiste
       else
